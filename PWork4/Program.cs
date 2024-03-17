@@ -20,7 +20,18 @@
             }
 
             Console.WriteLine($"Array include {counterPair} pair numbers.");
-
+            Console.Write("It`s: ");
+            foreach(int num in array)
+            {
+                if ((num % 2) == 0)
+                {
+                    Console.Write(num);
+                    counterPair--;
+                    Console.Write((counterPair != 0) ? ", " : ". ");
+                }
+                if (counterPair == 0)
+                    break;
+            }
             Console.ReadKey();
         }
     }
