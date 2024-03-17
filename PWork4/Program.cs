@@ -5,9 +5,9 @@
         static void Main(string[] args)
         {
             var rand = new Random();
-            
+
             int [] array = new int[rand.Next(24, 51)];
-            Console.WriteLine(array.Length);
+            Console.WriteLine($"Length array: {array.Length}");
 
             for (int i = 0; i < array.Length; i++)
             {
