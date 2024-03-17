@@ -1,16 +1,18 @@
 ﻿namespace PWork4
 {
-    internal class Task1
+    internal class Task2
     {
         static void Main(string[] args)
         {
-            int[] numbers = new int[50]; 
+            var rand = new Random();
             
-            for (int i = 1; i <= numbers.Length; i++)
-                numbers[i-1] = i * 2;
+            int [] array = new int[rand.Next(24, 51)];
+            Console.WriteLine(array.Length);
 
-            foreach (int num in numbers)
-                Console.WriteLine($"Element: {num}");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = rand.Next();
+            }
 
             Console.ReadKey();
         }
