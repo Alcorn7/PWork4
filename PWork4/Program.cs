@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int[] numbers = new int[50]; 
+            
+            for (int i = 1; i <= numbers.Length; i++)
+                numbers[i-1] = i * 2;
+
+            foreach (int num in numbers)
+                Console.WriteLine($"Element: {num}");
+
+            Console.ReadKey();
         }
     }
 }
